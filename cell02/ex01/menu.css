@@ -3,3 +3,21 @@
     width: 50px;
     border: solid;
 }
+.button:hover {
+    background-color: aqua;
+}
+.food:hover {
+    background-color: chartreuse;
+}
+.list {
+    display: none;
+}
+
+.menu:hover .list {
+    display: block;
+}
+
+.menu:hover .list {
+    display: flex;
+    flex-direction: column;
+}
