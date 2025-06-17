@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.bg1 {
+  background-image: url('https://source.unsplash.com/1600x900/?nature,water');
+}
+
+.bg2 {
+  background-image: url('https://source.unsplash.com/1600x900/?nature,forest');
+}
+
+.center-text {
+  text-align: center;
+  font-size: 2em;
+}
+
+.content {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  font-size: 1.5em;
+}

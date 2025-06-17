@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>หน้าเว็บพารัลแลกซ์</title>
+  <style>
+    /* ตั้งค่าเบื้องต้น */
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* ภาพพารัลแลกซ์ */
+    .parallax {
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2em;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    /* พื้นหลังแต่ละรูป */
+    .parallax1 {
+      background-image: url('https://th.bing.com/th/id/R.f62a38e3ad9fb9eaee429638cb253263?rik=HyH%2b%2frhraKBJ%2bw&pid=ImgRaw&r=0');
+    }
+
+    .parallax2 {
+      background-image: url('https://th.bing.com/th/id/R.df4f1b080be2967ce1a48ce01d27e484?rik=nGT2c3%2fpsRm33A&pid=ImgRaw&r=0');
+    }
+
+    /* ส่วนตรงกลางระหว่างภาพ */
+    .content {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ภาพพื้นหลังแรก -->
+  <div class="parallax parallax1">
+    <div>ยินดีต้อนรับสู่เว็บไซต์</div>
+  </div>
+
+  <!-- กล่องข้อความ -->
+  <div class="content">
+    สวัสดีวันจันทร์<br>
+  </div>
+
+  <!-- ภาพพื้นหลังที่สอง -->
+  <div class="parallax parallax2">
+    <div>ขอบคุณที่เยี่ยมชม</div>
+  </div>
+
+</body>
+</html>
