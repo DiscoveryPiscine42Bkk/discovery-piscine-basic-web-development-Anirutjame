@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend 2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img.profile {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 22px;
+            color: #333;
+        }
+
+        .card p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .instagram-icon {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        .contact-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .navbar div {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .navbar div:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .course-info {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+        } 
+        .course-info {
+          
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>ประวัติส่วนตัว</h2>
+        <img class="profile" src="https://media.discordapp.net/attachments/1282008551555862703/1385125548921061427/IMG_1314.jpg?ex=6854ee31&is=68539cb1&hm=49a6466ffb97ac26c47a76ba63cf7502c98e9e91ff714cc0a64a5a5005e8de11&=&format=webp&width=667&height=890" alt="Profile Photo">
+        <p><strong>Intra:</strong> jamexpr</p>
+        <p>My name is Jame. I like Thai food.</p>
+        <a href="https://instagram.com/jamexpr" target="_blank">
+            <img class="instagram-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <br>
+        <a class="contact-button" href="https://instagram.com/jamexpr" target="_blank">Contact&gt;</a>
+        
+        <div class="course-info">
+            <h3>หลักสูตรครุศาสตร์อุตสาหกรรมบัณฑิต</h3>
+            <img width="300px" height="200px" class="course-info" src="https://siet.kmitl.ac.th/sites/siet/files/styles/responsive_16x9_1200w/public/2025-05/%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%99.jpg?itok=WqH70ZKA"
+            <p><strong>หลักสูตรครุศาสตร์อุตสาหกรรมบัณฑิต สาขาวิชาการออกแบบสภาพแวดล้อมภายใน:</strong>  (5 ปี)</p>
+            <p> มุ่งพัฒนาผู้เรียนให้มีความรู้และทักษะทั้งด้านวิชาการและการปฏิบัติในด้านการจัดการเรียนรู้
+การออกแบบสภาพแวดล้อมภายใน สถาปัตยกรรมกายใน และมัณฑนศิลป์ เพื่อส่งเสริมการเรียบรู้ตลอดชีวิต
+วัตถุประสงค์คือการผลิตบุคลากรทางการศึกษาและนักวิจัยในสาขาที่เกี่ยวข้อง
+พร้อมสนับสนุนการพัฒนาประเทศด้วยทักษะการสอน การออกแบบ และการอนุรักษ์ศิลปะวัฒนธรรมและสิ่งแวดล้อม</p>
+            
+        </div>
+
+        <div class="navbar">
+            <a href="final.html"><div>Home</div></a>
+            <a href="frend1.html"><div>Friend 1</div></a>
+            <a href="frend2.html"><div>Friend 2</div></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final</title>
+    <link rel="stylesheet" href="final.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .parallax {
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px #000;
+            transition: background-color 0.5s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .parallax1 {
+            background-image: url('https://th.bing.com/th/id/OIP.vigeN1fzXK9tRssClu1kYgHaEK?rs=1&pid=ImgDetMain&cb=idpwebp2&o=7&rm=3');
+        }
+
+        .parallax2 {
+            background-image: url('https://images-na.ssl-images-amazon.com/images/S/pv-target-images/fb10e595833eaa9ff5d1127b38e924985299afd5b007a8dfff50fa62627b1682._RI_TTW_SX720_FMjpg_.png');
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 1.5em;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        button {
+            background-color: #000;
+            color: aliceblue;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+            margin: 10px;
+        }
+
+        button:hover {
+            background-color: #444;
+            transform: translateY(-2px);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            .parallax {
+                font-size: 1.5em;
+            }
+
+            .content {
+                font-size: 1.2em;
+                padding: 30px 10px;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+
+        .scroll-effect {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .scroll-effect.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax parallax1">
+        <div>Welcome to the self-introduction website.</div>
+    </div>
+
+    <div class="content scroll-effect" id="content">
+        Please select a person<br>
+        <a href="frend1.html"><button>friend1</button></a>
+        <a href="frend2.html"><button>friend2</button></a>
+    </div>
+
+    <div class="parallax parallax2">
+        <div>thank you watching</div>
+    </div>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const content = document.getElementById('content');
+            const contentPosition = content.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+
+            if (contentPosition < screenPosition) {
+                content.classList.add('visible');
+            }
+        });
+    </script>
+</body>
+</html>

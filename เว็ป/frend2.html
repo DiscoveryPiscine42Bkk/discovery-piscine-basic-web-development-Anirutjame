@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend 2</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #acb6e5); /* Gradient background */
+        }
+
+        .card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 350px; /* Increased width for better proportions */
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img.profile {
+            width: 120px; /* Increased profile image size */
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            margin: 0;
+            font-size: 24px; /* Increased font size */
+            color: #333;
+        }
+
+        .card p {
+            margin: 5px 0;
+            color: #666;
+        }
+
+        .instagram-icon {
+            width: 30px;
+            height: 30px;
+            margin: 10px;
+        }
+
+        .contact-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .navbar div {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .navbar div:hover {
+            background-color: #0056b3;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .course-info {
+            margin-top: 20px;
+            text-align: left;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .course-info img {
+            width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners for the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>ประวัติส่วนตัว</h2>
+        <img class="profile" src="https://media.discordapp.net/attachments/1385140486943277089/1385165295618097244/Screenshot_20250619_145211_Instagram.jpg?ex=68551335&is=6853c1b5&hm=9cbe66c048f5239c92ebb2c6613f055023616e2b6eaec79f9f1125b9a40948ac&=&format=webp&width=847&height=890" alt="Profile Photo">
+        <p><strong>Intragram:</strong>thnkritz</p>
+        <p>My name is Copter, I am talkative</p>
+        <a href="https://www.instagram.com/thnkritz/" target="_blank">
+            <img class="instagram-icon" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <br>
+        <a class="contact-button" href="https://www.instagram.com/thnkritz/" target="_blank">Contact&gt;</a>
+        
+        <div class="course-info">
+            <h3>หลักสูตรครุศาสตร์อุตสาหกรรมบัณฑิต</h3>
+            <img class="course-info" src="https://siet.kmitl.ac.th/sites/siet/files/styles/responsive_16x9_1200w/public/2025-05/%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B9%81%E0%B8%9A%E0%B8%9A%E0%B8%A0%E0%B8%B2%E0%B8%A2%E0%B9%83%E0%B8%99.jpg?itok=WqH70ZKA" alt="Course Image">
+            <p><strong>หลักสูตรครุศาสตร์อุตสาหกรรมบัณฑิต สาขาวิชาการออกแบบสภาพแวดล้อมภายใน:</strong> (5 ปี)</p>
+            <p>มุ่งพัฒนาผู้เรียนให้มีความรู้และทักษะทั้งด้านวิชาการและการปฏิบัติในด้านการจัดการเรียนรู้ การออกแบบสภาพแวดล้อมภายใน สถาปัตยกรรมกายใน และมัณฑนศิลป์ เพื่อส่งเสริมการเรียนรู้ตลอดชีวิต วัตถุประสงค์คือการผลิตบุคลากรทางการศึกษาและนักวิจัยในสาขาที่เกี่ยวข้อง พร้อมสนับสนุนการพัฒนาประเทศด้วยทักษะการสอน การออกแบบ และการอนุรักษ์ศิลปะวัฒนธรรมและสิ่งแวดล้อม</p>
+        </div>
+
+        <div class="navbar">
+            <a href="final.html"><div>Home</div></a>
+            <a href="frend1.html"><div>Friend 1</div></a>
+            <a href="frend2.html"><div>Friend 2</div></a>
+        </div>
+    </div>
+</body>
+</html>
